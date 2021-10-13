@@ -6,10 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/b8200729a2.js" crossorigin="anonymous"></script>
     <title>ROCK PAPER SCISSORS</title>
 </head>
 <body>
-    <h1>Hola mundo</h1>
+
+    <div class="container">
+        <div class="title">
+            <h1 class="gradient-text">ROCK-PAPER-SCISSORS</h1>
+        </div>
+        <div class="content">
+            <div class="rules">
+                <ul>
+                    <li class="item"><p>Rock wins against scissors</p></li>
+                    <li class="item"><p>Scissors wins against paper</p></li>
+                    <li class="item"><p>Paper wins against rock</p></li>
+                </ul>
+            </div>
+            <div id="player" class="player">
+                <h3>Choose:</h3>
+                <div class="options">
+                    <div id="rock" class="gradient-text option rock fas fa-hand-rock"></div>
+                    <div id="paper" class="option paper gradient-text fas fa-hand-paper"></div>
+                    <div id="scissors" class="option scissors gradient-text fas fa-hand-scissors"></div>
+                </div>
+            </div>
+            <div class="computer">
+                <h3>Computer:</h3>
+                <div class="options">
+                    <div class=" gradient-text option-computer" id="option-computer"><i class="fas fa-question-circle"></i></div>
+                </div>
+            </div>
+            <div class="final">
+                <div id="result" class="result">Result</div>
+                <div id="roundsGame" class="roundsGame">Round: 0</div>
+                <div id="restart"><button>Restart</button></div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="scripts/app.js"></script>
 </body>
 </html>
